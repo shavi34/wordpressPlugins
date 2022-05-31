@@ -5,7 +5,7 @@ export default function save( { attributes } ) {
 	return (
 		<RichText.Content 
       { ...useBlockProps.save( {
-        className: `text-box-align-${ alignment }`,
+        className: `text-box-align-${ alignment }`, // add this as a param to avoid override useBlockProps css classes
       } ) }
       tagName="h4"
       value={ text }
