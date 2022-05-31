@@ -1,0 +1,20 @@
+{
+  "name": "firstblock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:js": "wp-scripts lint-js",
+    "lint:js:src": "wp-scripts lint-js ./src"
+  },
+  "author": "Shavinda Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^23.1.0"
+  },
+  "dependencies": {
+    "@wordpress/blocks": "^11.8.0"
+  }
+}
