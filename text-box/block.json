@@ -3,7 +3,6 @@
 	"name": "create-block/text-box",
 	"title": "Text box",
 	"category": "widgets",
-	"icon": "text-page",
 	"description": "box of text",
   "keywords": "text",
 	"supports": {
