@@ -1,11 +1,14 @@
 // var registerBlockType = wp.blocks.registerBlockType;
 import { registerBlockType } from '@wordpress/blocks';
+import { useBlockProps } from "@wordpress/block-editor";
 
 registerBlockType( 'blocks-course/firstblock', {
 	edit: function () {
-		return <p className="class">Edit JSX</p>;
-	},
+    const blockProps = useBlockProps();	
+		return <p {...blockProps}>Save JSX</p>;
+  },
 	save: function () {
-		return <p className="class">Save JSX</p>;
+    const blockProps = useBlockProps.save();	
+		return <p {...blockProps}>Sa sve JSX</p>;
 	},
 } );
